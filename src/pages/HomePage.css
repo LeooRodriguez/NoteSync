@@ -1,21 +1,106 @@
-.home-page {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.home-container {
+  text-align: center;
   padding: 20px;
+  background: url('https://images.pexels.com/photos/1029618/pexels-photo-1029618.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center fixed;
+  background-size: cover;
 }
 
-.carousel {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 20px;
+.carousel-image {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
-.carousel-item {
+.carousel-text {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.home-content {
+  margin-top: 20px;
+}
+
+.home-content h1 {
+  font-size: 2.5em;
+  color: #333;
+}
+
+.home-content p {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.cta-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+}
+
+.features-section {
+  margin-top: 40px;
+}
+
+.features-grid {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #ddd;
-  height: 300px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  width: 200px;
+  margin: 20px;
+  padding: 20px;
+  background-color: #666; 
+  color: #fff; 
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+  font-size: 1.5em;
+  color: #fff; 
+}
+
+.feature-card p {
+  font-size: 1em;
+  color: #fff; 
+}
+
+.icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+
+.cta-button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  background-color: #666; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; 
+  transform: scale(1.05); 
+}
+
+.cta-button:active {
+  background-color: #001a35; 
+  transform: scale(1); 
 }

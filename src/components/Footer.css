@@ -1,8 +1,41 @@
 .footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-    margin-top: auto;
-  }
-  
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-buttons {
+  margin-top: 10px;
+}
+
+.footer-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.footer-button.linkedin {
+  background-color: #0077b5; 
+}
+
+.footer-button.linkedin:hover {
+  background-color: #005582; 
+}
+
+.footer-button.github {
+  background-color: #7e425b; 
+}
+
+.footer-button.github:hover {
+  background-color: #271324; 
+}
